@@ -1,0 +1,82 @@
+name: Clipper
+
+on:
+  schedule:
+    # Cada 20 minutos. GitHub no admite menos de 5 y suele retrasarse unos minutos.
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+    inputs:
+      accion:
+        description: "Que hacer"
+        type: choice
+        default: revisar
+        options: [revisar, descargar, descartar, reintentar]
+      ids:
+        description: "Ids de clips separados por coma (para descargar/descartar/reintentar)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+# Nunca dos ejecuciones a la vez: escriben el mismo JSON.
+concurrency:
+  group: clipper
+  cancel-in-progress: false
+
+env:
+  AUTO_DOWNLOAD_SCORE: "72"      # descarga sola a partir de este puntaje
+  MAX_DOWNLOADS_PER_RUN: "4"     # tope por pasada, para no comerte los minutos
+  CLIPS_PER_SCAN: "40"
+  MAKE_VERTICAL: "true"          # genera tambien el 9:16 para Shorts
+  RELEASE_TAG: "clips"
+  KICK_PROXY: ${{ secrets.KICK_PROXY }}
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  clipper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r scripts/requirements.txt
+
+      - name: Asegurar que existe el release donde viven los videos
+        run: |
+          gh release view "$RELEASE_TAG" >/dev/null 2>&1 || \
+          gh release create "$RELEASE_TAG" \
+            --title "Clips descargados" \
+            --notes "Los mp4 que saca el clipper. Se actualiza solo."
+
+      - name: Marcar clips
+        if: inputs.accion == 'descartar' || inputs.accion == 'reintentar'
+        run: python scripts/marcar.py "${{ inputs.accion }}" "${{ inputs.ids }}"
+
+      - name: Revisar canales
+        if: inputs.accion == '' || inputs.accion == 'revisar'
+        run: python scripts/escanear.py
+
+      - name: Descargar y subir clips
+        if: inputs.accion != 'descartar' && inputs.accion != 'reintentar'
+        run: python scripts/descargar.py "${{ inputs.ids }}"
+
+      - name: Guardar el estado en el repo
+        run: |
+          git config user.name  "clipper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/clips.json
+          git diff --staged --quiet && { echo "Sin cambios."; exit 0; }
+          git commit -m "clips: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep 5
+          done
+          exit 1

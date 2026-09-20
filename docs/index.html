@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kick Clipper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fondo:#11151d; --panel:#171c26; --panel2:#1d232f; --linea:#28303d;
+  --texto:#e7eaf0; --tenue:#858ea1; --debil:#5c6577;
+  --senal:#53fc18; --calor:#ffb020; --frio:#4a90d9; --alerta:#ff5f56; --radio:4px;
+  font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-variant-numeric:tabular-nums; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);font-size:14px;line-height:1.45}
+h1,h2,h3{margin:0;font-weight:800;font-stretch:87%;letter-spacing:-.01em}
+button{font:inherit;color:inherit;cursor:pointer;border:none;background:none}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--senal);outline-offset:2px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(17,21,29,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--linea);
+  display:flex;align-items:center;gap:22px;padding:12px 22px;flex-wrap:wrap}
+.marca{display:flex;align-items:baseline;gap:9px}
+.marca h1{font-size:19px;font-stretch:75%}
+.marca span{color:var(--debil);font-size:12px}
+.pulso{width:7px;height:7px;border-radius:50%;background:var(--senal);
+  box-shadow:0 0 0 0 rgba(83,252,24,.5);animation:late 2.6s infinite}
+@keyframes late{70%{box-shadow:0 0 0 7px rgba(83,252,24,0)}100%{box-shadow:0 0 0 0 rgba(83,252,24,0)}}
+@media (prefers-reduced-motion:reduce){.pulso{animation:none}}
+.metricas{display:flex;gap:20px;margin-left:auto;flex-wrap:wrap}
+.metrica b{display:block;font-size:17px;font-stretch:75%;font-weight:800}
+.metrica small{color:var(--debil);font-size:11px}
+
+.mesa{display:grid;grid-template-columns:286px minmax(0,1fr)}
+aside{border-right:1px solid var(--linea);padding:18px;position:sticky;
+  top:calc(58px + env(safe-area-inset-top,0px));height:calc(100vh - 58px);overflow-y:auto}
+main{padding:20px 22px 80px;min-width:0}
+.bloque{margin-bottom:26px}
+.bloque>h3{font-size:12px;font-stretch:87%;color:var(--tenue);font-weight:700;margin-bottom:9px}
+
+input[type=text],input[type=password],select{width:100%;background:var(--panel);
+  border:1px solid var(--linea);color:var(--texto);padding:8px 10px;border-radius:var(--radio);font:inherit}
+input::placeholder{color:var(--debil)}
+.btn{display:inline-block;text-align:center;background:var(--panel2);border:1px solid var(--linea);
+  padding:8px 12px;border-radius:var(--radio);font-weight:600;white-space:nowrap;transition:background .12s}
+.btn:hover{background:#252d3b}
+.btn.principal{background:var(--senal);color:#0c1206;border-color:var(--senal)}
+.btn.principal:hover{background:#68ff35}
+.btn.mini{padding:5px 9px;font-size:12px}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+.canal{display:flex;align-items:center;gap:9px;padding:7px 0;border-bottom:1px solid var(--linea)}
+.canal img{width:30px;height:30px;border-radius:50%;object-fit:cover;background:var(--panel2);flex:none}
+.canal .nom{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.canal .sub{font-size:11px;color:var(--debil)}
+.canal .sub.mal{color:var(--alerta)}
+
+.fila-filtro{display:flex;align-items:center;justify-content:space-between;gap:10px;
+  margin-bottom:10px;font-size:13px;color:var(--tenue)}
+input[type=range]{width:100%;accent-color:var(--senal)}
+
+.destacado{background:linear-gradient(180deg,#1b2230,#161b25);border:1px solid #2f3a4a;
+  border-left:3px solid var(--senal);border-radius:var(--radio);padding:16px;
+  display:grid;grid-template-columns:260px minmax(0,1fr);gap:18px;margin-bottom:26px}
+.destacado .rotulo{font-size:11px;color:var(--senal);font-weight:700;margin-bottom:6px}
+.destacado h2{font-size:21px;font-stretch:87%;line-height:1.2;margin-bottom:8px}
+.destacado img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:3px;background:#0d1016}
+
+.clip{display:grid;grid-template-columns:152px minmax(0,1fr) auto;gap:14px;
+  padding:12px 0;border-bottom:1px solid var(--linea);align-items:start}
+.clip:hover{background:#141924}
+.miniatura{position:relative}
+.miniatura img{width:152px;aspect-ratio:16/9;object-fit:cover;border-radius:3px;background:#0d1016;display:block}
+.dur{position:absolute;right:4px;bottom:4px;background:rgba(0,0,0,.8);padding:1px 5px;border-radius:2px;font-size:11px;font-weight:600}
+.titulo{font-weight:600;margin-bottom:3px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.meta{font-size:12px;color:var(--debil);margin-bottom:8px}
+.meta em{font-style:normal;color:var(--tenue)}
+
+.medidor{display:flex;align-items:center;gap:10px}
+.barras{display:flex;height:9px;flex:1;max-width:340px;border-radius:2px;overflow:hidden;background:#0e121a}
+.barras i{display:block;height:100%}
+.puntaje{font-size:19px;font-weight:800;font-stretch:75%;width:38px;text-align:right}
+.leyenda{font-size:11px;color:var(--debil);margin-top:5px}
+
+.acciones-clip{display:flex;flex-direction:column;gap:5px;width:116px}
+.estado{font-size:11px;text-align:center;padding:4px;border-radius:3px;background:var(--panel2);color:var(--tenue)}
+.estado.listo{color:var(--senal)}
+.estado.error{color:var(--alerta)}
+.estado.pedido{color:var(--calor)}
+
+.vacio{border:1px dashed var(--linea);border-radius:var(--radio);padding:40px 24px;
+  text-align:center;color:var(--tenue);max-width:560px}
+.vacio b{display:block;color:var(--texto);font-size:16px;font-stretch:87%;margin-bottom:6px}
+.vacio code{background:var(--panel2);padding:1px 5px;border-radius:3px;font-size:12px}
+
+#aviso{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:60;
+  background:var(--panel2);border:1px solid var(--linea);padding:10px 16px;border-radius:var(--radio);
+  box-shadow:0 10px 30px rgba(0,0,0,.5);display:none;max-width:90vw}
+#aviso.err{border-color:var(--alerta);color:#ffb3af}
+
+@media (max-width:900px){
+  .mesa{grid-template-columns:1fr}
+  aside{position:static;height:auto;border-right:none;border-bottom:1px solid var(--linea)}
+  .destacado{grid-template-columns:1fr}
+  .clip{grid-template-columns:110px minmax(0,1fr)}
+  .miniatura img{width:110px}
+  .acciones-clip{grid-column:1/-1;flex-direction:row;width:auto}
+  .acciones-clip>*{flex:1}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="marca">
+    <span class="pulso" aria-hidden="true"></span>
+    <h1>Kick Clipper</h1>
+    <span id="ritmo">cargando…</span>
+  </div>
+  <div class="metricas">
+    <div class="metrica"><b id="m-canales">0</b><small>canales</small></div>
+    <div class="metrica"><b id="m-clips">0</b><small>clips analizados</small></div>
+    <div class="metrica"><b id="m-calientes">0</b><small>sin bajar con 70+</small></div>
+    <div class="metrica"><b id="m-listos">0</b><small>en el release</small></div>
+  </div>
+</header>
+
+<div class="mesa">
+  <aside>
+    <div class="bloque">
+      <h3>Canales</h3>
+      <div id="canales"></div>
+      <a class="btn mini" id="editar" style="margin-top:10px;display:block" target="_blank" rel="noopener">Editar la lista</a>
+    </div>
+
+    <div class="bloque">
+      <h3>Filtros</h3>
+      <div class="fila-filtro"><label for="min">Puntaje mínimo</label><b id="min-val">45</b></div>
+      <input type="range" id="min" min="0" max="95" value="45" step="5">
+      <div class="fila-filtro" style="margin-top:14px"><label for="est">Estado</label></div>
+      <select id="est">
+        <option value="">Todos</option>
+        <option value="nuevo">Sin bajar</option>
+        <option value="listo">Descargados</option>
+        <option value="error">Con error</option>
+      </select>
+    </div>
+
+    <div class="bloque">
+      <h3>Mandar órdenes</h3>
+      <p style="color:var(--debil);font-size:12px;margin:0 0 8px">
+        Para pedir descargas desde aquí necesitas un token con permiso de Actions
+        sobre este repo. Se queda en este navegador y en ningún sitio más.</p>
+      <input type="password" id="token" placeholder="github_pat_…" autocomplete="off">
+      <button class="btn mini" id="guardar-token" style="margin-top:6px;width:100%">Guardar token</button>
+      <button class="btn mini" id="revisar-ya" style="margin-top:6px;width:100%">Revisar canales ahora</button>
+    </div>
+  </aside>
+
+  <main>
+    <div id="destacado"></div>
+    <div id="lista"></div>
+  </main>
+</div>
+
+<div id="aviso" role="status"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const COLORES = {velocidad:'#53fc18', anomalia:'#ffb020', enganche:'#4a90d9', duracion:'#9b7bd4', frescura:'#3f4a5c'};
+const CLAVES  = ['velocidad','anomalia','enganche','duracion','frescura'];
+
+// Deduce owner/repo de la URL de GitHub Pages: usuario.github.io/repo/
+const partes = location.hostname.split('.');
+const OWNER  = partes[0];
+const REPO   = location.pathname.split('/').filter(Boolean)[0] || OWNER + '.github.io';
+const SLUG   = `${OWNER}/${REPO}`;
+$('#editar').href = `https://github.com/${SLUG}/edit/main/canales.txt`;
+
+let DATOS = {clips:{}, canales:[]};
+let TOKEN = '';
+try { TOKEN = localStorage.getItem('gh_token') || ''; } catch(e){}
+if(TOKEN) $('#token').value = TOKEN;
+
+function avisar(txt, err){
+  const a = $('#aviso');
+  a.textContent = txt; a.className = err ? 'err' : ''; a.style.display = 'block';
+  clearTimeout(a._t); a._t = setTimeout(() => a.style.display = 'none', 5000);
+}
+const nfmt = n => n >= 1000 ? (n/1000).toFixed(n >= 10000 ? 0 : 1) + 'k' : (n || 0);
+const dur  = s => `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;
+const hace = ts => {
+  if(!ts) return '';
+  const h = (Date.now() - new Date(ts).getTime()) / 36e5;
+  if(h < 1) return 'hace ' + Math.max(1, Math.round(h*60)) + ' min';
+  if(h < 48) return 'hace ' + Math.round(h) + ' h';
+  return 'hace ' + Math.round(h/24) + ' días';
+};
+
+async function dispatch(accion, ids){
+  if(!TOKEN){ avisar('Primero pega un token de GitHub en la barra lateral.', true); return; }
+  const r = await fetch(`https://api.github.com/repos/${SLUG}/actions/workflows/clipper.yml/dispatches`, {
+    method:'POST',
+    headers:{Authorization:'Bearer ' + TOKEN, Accept:'application/vnd.github+json'},
+    body: JSON.stringify({ref:'main', inputs:{accion, ids: ids || ''}})
+  });
+  if(r.status === 204){
+    avisar('Orden enviada. El workflow tarda un par de minutos en reflejarse aquí.');
+  } else {
+    const e = await r.json().catch(() => ({}));
+    avisar('GitHub la rechazó: ' + (e.message || r.status), true);
+  }
+}
+
+function medidor(p){
+  const barras = CLAVES.map(k =>
+    `<i style="width:${p[k] || 0}%;background:${COLORES[k]}" title="${k}: ${p[k] || 0}"></i>`).join('');
+  return `<div class="barras">${barras}<i style="flex:1;background:#0e121a"></i></div>`;
+}
+
+function acciones(c){
+  const etiquetas = {nuevo:'', pedido:'pedido…', listo:'en el release', error:'error', descartado:'descartado'};
+  let html = '';
+  if(c.estado === 'listo' && c.archivo){
+    html += `<a class="btn mini" href="${c.archivo}" download>Guardar mp4</a>`;
+    if(c.vertical) html += `<a class="btn mini" href="${c.vertical}" download>Guardar 9:16</a>`;
+  } else if(c.estado === 'nuevo' || c.estado === 'descartado'){
+    html += `<button class="btn mini principal" onclick="pedir('${c.id}')">Descargar</button>`;
+    if(c.estado === 'nuevo') html += `<button class="btn mini" onclick="dispatch('descartar','${c.id}')">Descartar</button>`;
+  } else if(c.estado === 'error'){
+    html += `<button class="btn mini" onclick="dispatch('reintentar','${c.id}')">Reintentar</button>`;
+  }
+  const et = etiquetas[c.estado];
+  if(et) html += `<div class="estado ${c.estado}" title="${(c.error || '').slice(0,200)}">${et}</div>`;
+  html += `<a class="btn mini" href="${c.url}" target="_blank" rel="noopener">Ver en Kick</a>`;
+  return html;
+}
+const pedir = id => dispatch('descargar', id);
+
+function pintarClip(c){
+  const p = c.partes || {};
+  return `<article class="clip">
+    <div class="miniatura"><img loading="lazy" src="${c.thumbnail || ''}" alt="">
+      <span class="dur">${dur(c.duration)}</span></div>
+    <div>
+      <div class="titulo">${c.title}</div>
+      <div class="meta"><em>${c.channel_slug}</em> · ${nfmt(c.views)} vistas · ${nfmt(c.likes)} likes ·
+        ${hace(c.created_at)}${c.category ? ' · ' + c.category : ''}</div>
+      <div class="medidor"><b class="puntaje">${Math.round(c.score)}</b>${medidor(p)}</div>
+      <div class="leyenda">${p.vistas_hora ?? 0} vistas/hora · ${p.x_mediana ?? 0}× la mediana del canal</div>
+    </div>
+    <div class="acciones-clip">${acciones(c)}</div>
+  </article>`;
+}
+
+function pintarDestacado(c){
+  if(!c){ $('#destacado').innerHTML = ''; return; }
+  const p = c.partes || {};
+  $('#destacado').innerHTML = `<section class="destacado">
+    <img loading="lazy" src="${c.thumbnail || ''}" alt="">
+    <div>
+      <div class="rotulo">El que sacaría ahora mismo</div>
+      <h2>${c.title}</h2>
+      <div class="meta"><em>${c.channel_slug}</em> · ${nfmt(c.views)} vistas · ${dur(c.duration)} · ${hace(c.created_at)}</div>
+      <div class="medidor"><b class="puntaje">${Math.round(c.score)}</b>${medidor(p)}</div>
+      <div class="leyenda">Va a ${p.vistas_hora ?? 0} vistas por hora, ${p.x_mediana ?? 0}× el ritmo normal de ${c.channel_slug}.</div>
+      <div style="display:flex;gap:6px;margin-top:12px">${acciones(c)}</div>
+    </div></section>`;
+}
+
+function pintar(){
+  const min = +$('#min').value, est = $('#est').value;
+  const todos = Object.values(DATOS.clips || {});
+  const clips = todos.filter(c => c.score >= min && (!est || c.estado === est))
+                     .sort((a,b) => b.score - a.score);
+
+  $('#m-canales').textContent  = (DATOS.canales || []).length;
+  $('#m-clips').textContent    = todos.length;
+  $('#m-calientes').textContent= todos.filter(c => c.score >= 70 && c.estado === 'nuevo').length;
+  $('#m-listos').textContent   = todos.filter(c => c.estado === 'listo').length;
+  $('#ritmo').textContent = DATOS.actualizado
+    ? `última revisión ${hace(DATOS.actualizado)} · baja solo desde ${DATOS.umbral ?? 72}`
+    : 'sin revisiones todavía';
+
+  $('#canales').innerHTML = (DATOS.canales || []).map(c => `
+    <div class="canal">
+      <img src="${c.avatar || ''}" alt="">
+      <div style="min-width:0;flex:1">
+        <div class="nom">${c.nombre || c.slug}</div>
+        <div class="sub ${c.error ? 'mal' : ''}">${c.error ? 'no respondió' : (c.total || 0) + ' clips · ' + hace(c.revisado)}</div>
+      </div>
+    </div>`).join('') || '<div class="sub" style="color:var(--debil)">Añade canales en canales.txt.</div>';
+
+  if(!clips.length){
+    pintarDestacado(null);
+    $('#lista').innerHTML = todos.length
+      ? `<div class="vacio"><b>Nada por encima de ${min} puntos.</b> Baja el filtro o espera la próxima revisión.</div>`
+      : `<div class="vacio"><b>Todavía no hay datos.</b>
+         Pon los canales en <code>canales.txt</code> y lanza el workflow <code>Clipper</code>
+         desde la pestaña Actions. En cuanto termine, esta página se llena sola.</div>`;
+    return;
+  }
+  pintarDestacado(clips[0]);
+  $('#lista').innerHTML = clips.slice(1).map(pintarClip).join('');
+}
+
+async function cargar(){
+  try{
+    const r = await fetch('./data/clips.json?t=' + Date.now());
+    DATOS = await r.json();
+  }catch(e){ avisar('No pude leer clips.json', true); }
+  pintar();
+}
+
+$('#min').oninput  = () => { $('#min-val').textContent = $('#min').value; };
+$('#min').onchange = pintar;
+$('#est').onchange = pintar;
+$('#guardar-token').onclick = () => {
+  TOKEN = $('#token').value.trim();
+  try{ localStorage.setItem('gh_token', TOKEN); }catch(e){}
+  avisar(TOKEN ? 'Token guardado en este navegador.' : 'Token borrado.');
+};
+$('#revisar-ya').onclick = () => dispatch('revisar', '');
+
+cargar();
+setInterval(cargar, 60000);
+</script>
+</body>
+</html>

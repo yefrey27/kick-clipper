@@ -1,0 +1,4 @@
+# Un canal por linea. Las lineas con # se ignoran.
+# Puedes pegar el nombre o el link completo.
+# westcol
+# https://kick.com/elmariana
