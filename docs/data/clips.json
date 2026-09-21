@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-09-21T15:07:39+00:00",
+ "actualizado": "2026-09-21T20:00:03+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-09-21T15:07:37+00:00",
+   "revisado": "2026-09-21T20:00:01+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
    "avatar": "https://files.kick.com/images/user/5922570/profile_image/conversion/297a6ce5-1fe2-48a3-96c5-3b3d5668d581-fullsize.webp",
-   "seguidores": "4529",
+   "seguidores": "4526",
    "total": 27
   }
  ],
@@ -25,17 +25,17 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-09-18T15:38:21.141098Z",
-   "score": 22.9,
+   "score": 22.4,
    "partes": {
-    "velocidad": 0.7,
-    "anomalia": 2.9,
+    "velocidad": 0.6,
+    "anomalia": 2.7,
     "enganche": 0.0,
     "duracion": 12.3,
-    "frescura": 7.0,
+    "frescura": 6.8,
     "vistas_hora": 0.1,
-    "x_mediana": 0.25
+    "x_mediana": 0.24
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 9,
    "estado": "nuevo",
    "archivo": null,
@@ -53,17 +53,17 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-09-18T15:34:08.339999Z",
-   "score": 20.7,
+   "score": 20.4,
    "partes": {
-    "velocidad": 0.2,
+    "velocidad": 0.1,
     "anomalia": 0.7,
     "enganche": 0.0,
     "duracion": 12.8,
-    "frescura": 7.0,
+    "frescura": 6.8,
     "vistas_hora": 0.0,
-    "x_mediana": 0.06
+    "x_mediana": 0.05
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 2,
    "estado": "nuevo",
    "archivo": null,
@@ -77,22 +77,22 @@
    "source_url": "https://clips.kick.com/clips/f5/clip_01M2T5VGJ89FM9DQPY139WKZ5D/playlist.m3u8",
    "thumbnail": "https://clips.kick.com/clips/f5/clip_01M2T5VGJ89FM9DQPY139WKZ5D/thumbnail.webp",
    "duration": 15,
-   "views": 6,
+   "views": 7,
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-09-18T11:55:11.133906Z",
-   "score": 21.8,
+   "score": 23.1,
    "partes": {
-    "velocidad": 0.8,
-    "anomalia": 3.2,
+    "velocidad": 1.1,
+    "anomalia": 4.4,
     "enganche": 0.0,
     "duracion": 10.9,
-    "frescura": 6.9,
-    "vistas_hora": 0.1,
-    "x_mediana": 0.29
+    "frescura": 6.7,
+    "vistas_hora": 0.2,
+    "x_mediana": 0.41
    },
-   "visto": "2026-09-21T15:07:39+00:00",
-   "prev_views": 5,
+   "visto": "2026-09-21T20:00:03+00:00",
+   "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
    "vertical": null
@@ -109,17 +109,17 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-09-18T03:56:19.296288Z",
-   "score": 23.1,
+   "score": 22.8,
    "partes": {
     "velocidad": 0.6,
-    "anomalia": 2.7,
+    "anomalia": 2.6,
     "enganche": 0.0,
     "duracion": 13.2,
-    "frescura": 6.6,
+    "frescura": 6.4,
     "vistas_hora": 0.1,
-    "x_mediana": 0.24
+    "x_mediana": 0.23
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 10,
    "estado": "nuevo",
    "archivo": null,
@@ -147,7 +147,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 3,
    "estado": "nuevo",
    "archivo": null,
@@ -175,7 +175,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.05
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 10,
    "estado": "nuevo",
    "archivo": null,
@@ -203,7 +203,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 5,
    "estado": "nuevo",
    "archivo": null,
@@ -231,7 +231,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -259,7 +259,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 5,
    "estado": "nuevo",
    "archivo": null,
@@ -287,7 +287,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 5,
    "estado": "nuevo",
    "archivo": null,
@@ -315,7 +315,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
@@ -343,7 +343,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 8,
    "estado": "nuevo",
    "archivo": null,
@@ -371,7 +371,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -389,18 +389,18 @@
    "likes": 0,
    "category": "EA Sports FC 26",
    "created_at": "2026-09-01T12:32:57.344129Z",
-   "score": 18.1,
+   "score": 15.1,
    "partes": {
-    "velocidad": 0.8,
-    "anomalia": 3.2,
+    "velocidad": 0.2,
+    "anomalia": 0.8,
     "enganche": 0.0,
     "duracion": 13.2,
     "frescura": 0.9,
-    "vistas_hora": 0.1,
-    "x_mediana": 0.29
+    "vistas_hora": 0.0,
+    "x_mediana": 0.07
    },
-   "visto": "2026-09-21T15:07:39+00:00",
-   "prev_views": 15,
+   "visto": "2026-09-21T20:00:03+00:00",
+   "prev_views": 16,
    "estado": "nuevo",
    "archivo": null,
    "vertical": null
@@ -427,7 +427,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 7,
    "estado": "nuevo",
    "archivo": null,
@@ -455,7 +455,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 7,
    "estado": "nuevo",
    "archivo": null,
@@ -483,7 +483,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 8,
    "estado": "nuevo",
    "archivo": null,
@@ -511,7 +511,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.06
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 16,
    "estado": "nuevo",
    "archivo": null,
@@ -539,7 +539,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 9,
    "estado": "nuevo",
    "archivo": null,
@@ -567,7 +567,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 8,
    "estado": "nuevo",
    "archivo": null,
@@ -595,7 +595,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.05
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 15,
    "estado": "nuevo",
    "archivo": null,
@@ -623,7 +623,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 10,
    "estado": "nuevo",
    "archivo": null,
@@ -651,7 +651,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 7,
    "estado": "nuevo",
    "archivo": null,
@@ -679,7 +679,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 5,
    "estado": "nuevo",
    "archivo": null,
@@ -707,7 +707,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 5,
    "estado": "nuevo",
    "archivo": null,
@@ -735,7 +735,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-09-21T15:07:39+00:00",
+   "visto": "2026-09-21T20:00:03+00:00",
    "prev_views": 7,
    "estado": "nuevo",
    "archivo": null,
