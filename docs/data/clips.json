@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-10-15T21:44:16+00:00",
+ "actualizado": "2026-10-15T23:58:35+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-10-15T21:44:16+00:00",
+   "revisado": "2026-10-15T23:58:35+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
@@ -35,7 +35,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 11,
    "estado": "nuevo",
    "archivo": null,
@@ -63,7 +63,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -91,7 +91,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 10,
    "estado": "nuevo",
    "archivo": null,
@@ -117,9 +117,9 @@
     "duracion": 13.2,
     "frescura": 0.4,
     "vistas_hora": 0.0,
-    "x_mediana": 0.05
+    "x_mediana": 0.04
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 15,
    "estado": "nuevo",
    "archivo": null,
@@ -791,7 +791,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
@@ -819,7 +819,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -847,7 +847,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 3,
    "estado": "nuevo",
    "archivo": null,
@@ -875,7 +875,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
@@ -903,7 +903,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 2,
    "estado": "nuevo",
    "archivo": null,
@@ -921,17 +921,17 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-10-07T18:13:54.050765Z",
-   "score": 15.3,
+   "score": 15.2,
    "partes": {
     "velocidad": 0.1,
     "anomalia": 0.5,
     "enganche": 0.0,
     "duracion": 10.9,
-    "frescura": 3.8,
+    "frescura": 3.7,
     "vistas_hora": 0.0,
     "x_mediana": 0.04
    },
-   "visto": "2026-10-15T21:44:16+00:00",
+   "visto": "2026-10-15T23:58:35+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
