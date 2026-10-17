@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-10-17T18:47:08+00:00",
+ "actualizado": "2026-10-17T21:09:33+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-10-17T18:47:08+00:00",
+   "revisado": "2026-10-17T21:09:33+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
@@ -35,7 +35,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 11,
    "estado": "nuevo",
    "archivo": null,
@@ -63,7 +63,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -77,21 +77,21 @@
    "source_url": "https://clips.kick.com/clips/f5/clip_01M2T5VGJ89FM9DQPY139WKZ5D/playlist.m3u8",
    "thumbnail": "https://clips.kick.com/clips/f5/clip_01M2T5VGJ89FM9DQPY139WKZ5D/thumbnail.webp",
    "duration": 15,
-   "views": 10,
+   "views": 11,
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-09-18T11:55:11.133906Z",
-   "score": 11.7,
+   "score": 21.0,
    "partes": {
-    "velocidad": 0.1,
-    "anomalia": 0.4,
+    "velocidad": 2.0,
+    "anomalia": 7.8,
     "enganche": 0.0,
     "duracion": 10.9,
     "frescura": 0.3,
-    "vistas_hora": 0.0,
-    "x_mediana": 0.03
+    "vistas_hora": 0.4,
+    "x_mediana": 0.84
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 10,
    "estado": "nuevo",
    "archivo": null,
@@ -117,9 +117,9 @@
     "duracion": 13.2,
     "frescura": 0.3,
     "vistas_hora": 0.0,
-    "x_mediana": 0.05
+    "x_mediana": 0.04
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 16,
    "estado": "nuevo",
    "archivo": null,
@@ -791,7 +791,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
@@ -819,7 +819,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -847,7 +847,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 3,
    "estado": "nuevo",
    "archivo": null,
@@ -875,7 +875,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
@@ -903,7 +903,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 2,
    "estado": "nuevo",
    "archivo": null,
@@ -931,7 +931,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-17T18:47:08+00:00",
+   "visto": "2026-10-17T21:09:33+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
