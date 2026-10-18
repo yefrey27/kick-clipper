@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-10-18T17:24:32+00:00",
+ "actualizado": "2026-10-18T19:37:20+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-10-18T17:24:31+00:00",
+   "revisado": "2026-10-18T19:37:20+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
@@ -35,7 +35,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 11,
    "estado": "nuevo",
    "archivo": null,
@@ -63,7 +63,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -91,7 +91,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 11,
    "estado": "nuevo",
    "archivo": null,
@@ -119,7 +119,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.04
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 16,
    "estado": "nuevo",
    "archivo": null,
@@ -791,7 +791,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
@@ -819,7 +819,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -847,7 +847,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 3,
    "estado": "nuevo",
    "archivo": null,
@@ -875,7 +875,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
@@ -903,7 +903,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 2,
    "estado": "nuevo",
    "archivo": null,
@@ -931,7 +931,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-18T17:24:32+00:00",
+   "visto": "2026-10-18T19:37:20+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
