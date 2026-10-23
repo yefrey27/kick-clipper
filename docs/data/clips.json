@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-10-23T20:28:44+00:00",
+ "actualizado": "2026-10-23T23:26:31+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-10-23T20:28:43+00:00",
+   "revisado": "2026-10-23T23:26:30+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
    "avatar": "https://files.kick.com/images/user/5922570/profile_image/conversion/297a6ce5-1fe2-48a3-96c5-3b3d5668d581-fullsize.webp",
-   "seguidores": 5194,
+   "seguidores": "5194",
    "total": 33
   }
  ],
@@ -791,7 +791,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-23T20:28:44+00:00",
+   "visto": "2026-10-23T23:26:31+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -819,7 +819,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-23T20:28:44+00:00",
+   "visto": "2026-10-23T23:26:31+00:00",
    "prev_views": 8,
    "estado": "nuevo",
    "archivo": null,
@@ -847,7 +847,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-23T20:28:44+00:00",
+   "visto": "2026-10-23T23:26:31+00:00",
    "prev_views": 5,
    "estado": "nuevo",
    "archivo": null,
@@ -875,7 +875,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-23T20:28:44+00:00",
+   "visto": "2026-10-23T23:26:31+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -903,7 +903,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-23T20:28:44+00:00",
+   "visto": "2026-10-23T23:26:31+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
@@ -931,7 +931,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-23T20:28:44+00:00",
+   "visto": "2026-10-23T23:26:31+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
