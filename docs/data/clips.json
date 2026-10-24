@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-10-24T15:05:08+00:00",
+ "actualizado": "2026-10-24T18:11:05+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-10-24T15:05:07+00:00",
+   "revisado": "2026-10-24T18:11:05+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
    "avatar": "https://files.kick.com/images/user/5922570/profile_image/conversion/297a6ce5-1fe2-48a3-96c5-3b3d5668d581-fullsize.webp",
-   "seguidores": 5237,
+   "seguidores": "5238",
    "total": 34
   }
  ],
@@ -791,7 +791,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-24T15:05:08+00:00",
+   "visto": "2026-10-24T18:11:05+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -819,7 +819,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-24T15:05:08+00:00",
+   "visto": "2026-10-24T18:11:05+00:00",
    "prev_views": 8,
    "estado": "nuevo",
    "archivo": null,
@@ -847,7 +847,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-24T15:05:08+00:00",
+   "visto": "2026-10-24T18:11:05+00:00",
    "prev_views": 5,
    "estado": "nuevo",
    "archivo": null,
@@ -865,9 +865,9 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-09-26T12:01:55.921914Z",
-   "score": 13.8,
+   "score": 13.7,
    "partes": {
-    "velocidad": 0.1,
+    "velocidad": 0.0,
     "anomalia": 0.2,
     "enganche": 0.0,
     "duracion": 13.2,
@@ -875,7 +875,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-24T15:05:08+00:00",
+   "visto": "2026-10-24T18:11:05+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -903,7 +903,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-10-24T15:05:08+00:00",
+   "visto": "2026-10-24T18:11:05+00:00",
    "prev_views": 4,
    "estado": "nuevo",
    "archivo": null,
@@ -917,21 +917,21 @@
    "source_url": "https://clips.kick.com/clips/5d/clip_01M4BS3DB8PNBDZGW1E0FNFWRA/playlist.m3u8",
    "thumbnail": "https://clips.kick.com/clips/5d/clip_01M4BS3DB8PNBDZGW1E0FNFWRA/thumbnail.webp",
    "duration": 15,
-   "views": 6,
+   "views": 7,
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-10-07T18:13:54.050765Z",
-   "score": 12.7,
+   "score": 20.1,
    "partes": {
-    "velocidad": 0.1,
-    "anomalia": 0.4,
+    "velocidad": 1.6,
+    "anomalia": 6.3,
     "enganche": 0.0,
     "duracion": 10.9,
     "frescura": 1.3,
-    "vistas_hora": 0.0,
-    "x_mediana": 0.03
+    "vistas_hora": 0.3,
+    "x_mediana": 0.65
    },
-   "visto": "2026-10-24T15:05:08+00:00",
+   "visto": "2026-10-24T18:11:05+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
@@ -949,17 +949,17 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-10-24T10:59:11.847504Z",
-   "score": 32.6,
+   "score": 28.4,
    "partes": {
-    "velocidad": 2.3,
-    "anomalia": 8.7,
+    "velocidad": 1.4,
+    "anomalia": 5.6,
     "enganche": 0.0,
     "duracion": 11.8,
-    "frescura": 9.8,
-    "vistas_hora": 0.5,
-    "x_mediana": 0.98
+    "frescura": 9.6,
+    "vistas_hora": 0.3,
+    "x_mediana": 0.56
    },
-   "visto": "2026-10-24T15:05:08+00:00",
+   "visto": "2026-10-24T18:11:05+00:00",
    "prev_views": 2,
    "estado": "nuevo",
    "archivo": null,
