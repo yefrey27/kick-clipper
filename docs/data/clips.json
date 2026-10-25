@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-10-25T10:05:13+00:00",
+ "actualizado": "2026-10-25T14:23:40+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-10-25T10:05:12+00:00",
+   "revisado": "2026-10-25T14:23:39+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
    "avatar": "https://files.kick.com/images/user/5922570/profile_image/conversion/297a6ce5-1fe2-48a3-96c5-3b3d5668d581-fullsize.webp",
-   "seguidores": 5237,
+   "seguidores": "5241",
    "total": 34
   }
  ],
@@ -875,7 +875,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-25T10:05:13+00:00",
+   "visto": "2026-10-25T14:23:40+00:00",
    "prev_views": 7,
    "estado": "nuevo",
    "archivo": null,
@@ -903,7 +903,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-25T10:05:13+00:00",
+   "visto": "2026-10-25T14:23:40+00:00",
    "prev_views": 5,
    "estado": "nuevo",
    "archivo": null,
@@ -931,7 +931,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-25T10:05:13+00:00",
+   "visto": "2026-10-25T14:23:40+00:00",
    "prev_views": 7,
    "estado": "nuevo",
    "archivo": null,
@@ -949,17 +949,17 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-10-24T10:59:11.847504Z",
-   "score": 23.2,
+   "score": 22.6,
    "partes": {
-    "velocidad": 0.5,
-    "anomalia": 2.0,
+    "velocidad": 0.4,
+    "anomalia": 1.7,
     "enganche": 0.0,
     "duracion": 11.8,
-    "frescura": 8.9,
+    "frescura": 8.7,
     "vistas_hora": 0.1,
-    "x_mediana": 0.17
+    "x_mediana": 0.15
    },
-   "visto": "2026-10-25T10:05:13+00:00",
+   "visto": "2026-10-25T14:23:40+00:00",
    "prev_views": 2,
    "estado": "nuevo",
    "archivo": null,
