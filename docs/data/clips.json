@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-10-25T17:49:00+00:00",
+ "actualizado": "2026-10-25T20:09:53+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-10-25T17:49:00+00:00",
+   "revisado": "2026-10-25T20:09:52+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
    "avatar": "https://files.kick.com/images/user/5922570/profile_image/conversion/297a6ce5-1fe2-48a3-96c5-3b3d5668d581-fullsize.webp",
-   "seguidores": "5243",
+   "seguidores": 5243,
    "total": 34
   }
  ],
@@ -875,7 +875,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-25T17:49:00+00:00",
+   "visto": "2026-10-25T20:09:53+00:00",
    "prev_views": 7,
    "estado": "nuevo",
    "archivo": null,
@@ -903,7 +903,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.02
    },
-   "visto": "2026-10-25T17:49:00+00:00",
+   "visto": "2026-10-25T20:09:53+00:00",
    "prev_views": 5,
    "estado": "nuevo",
    "archivo": null,
@@ -921,17 +921,17 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-10-07T18:13:54.050765Z",
-   "score": 12.6,
+   "score": 12.5,
    "partes": {
     "velocidad": 0.1,
     "anomalia": 0.4,
     "enganche": 0.0,
     "duracion": 10.9,
-    "frescura": 1.2,
+    "frescura": 1.1,
     "vistas_hora": 0.0,
     "x_mediana": 0.03
    },
-   "visto": "2026-10-25T17:49:00+00:00",
+   "visto": "2026-10-25T20:09:53+00:00",
    "prev_views": 7,
    "estado": "nuevo",
    "archivo": null,
@@ -949,17 +949,17 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-10-24T10:59:11.847504Z",
-   "score": 22.4,
+   "score": 22.1,
    "partes": {
-    "velocidad": 0.4,
-    "anomalia": 1.6,
+    "velocidad": 0.3,
+    "anomalia": 1.5,
     "enganche": 0.0,
     "duracion": 11.8,
-    "frescura": 8.6,
+    "frescura": 8.5,
     "vistas_hora": 0.1,
-    "x_mediana": 0.13
+    "x_mediana": 0.12
    },
-   "visto": "2026-10-25T17:49:00+00:00",
+   "visto": "2026-10-25T20:09:53+00:00",
    "prev_views": 2,
    "estado": "nuevo",
    "archivo": null,
