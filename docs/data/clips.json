@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-11-10T21:37:29+00:00",
+ "actualizado": "2026-11-11T01:27:46+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-11-10T21:37:28+00:00",
+   "revisado": "2026-11-11T01:27:46+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
@@ -959,7 +959,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-11-10T21:37:29+00:00",
+   "visto": "2026-11-11T01:27:46+00:00",
    "prev_views": 2,
    "estado": "nuevo",
    "archivo": null,
