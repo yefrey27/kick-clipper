@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-11-18T10:12:28+00:00",
+ "actualizado": "2026-11-18T18:51:55+00:00",
  "canales": [
   {
    "slug": "miguez01",
-   "revisado": "2026-11-18T10:12:27+00:00",
+   "revisado": "2026-11-18T18:51:55+00:00",
    "error": null,
    "nuevos": 0,
    "nombre": "miguez01",
    "avatar": "https://files.kick.com/images/user/5922570/profile_image/conversion/297a6ce5-1fe2-48a3-96c5-3b3d5668d581-fullsize.webp",
-   "seguidores": 5530,
+   "seguidores": "5529",
    "total": 35
   }
  ],
@@ -959,7 +959,7 @@
     "vistas_hora": 0.0,
     "x_mediana": 0.01
    },
-   "visto": "2026-11-18T10:12:28+00:00",
+   "visto": "2026-11-18T18:51:55+00:00",
    "prev_views": 2,
    "estado": "nuevo",
    "archivo": null,
@@ -977,17 +977,17 @@
    "likes": 0,
    "category": "EA Sports FC 27",
    "created_at": "2026-11-11T12:24:57.307621Z",
-   "score": 18.7,
+   "score": 18.4,
    "partes": {
     "velocidad": 0.2,
-    "anomalia": 0.9,
+    "anomalia": 0.8,
     "enganche": 0.0,
     "duracion": 13.2,
-    "frescura": 4.4,
+    "frescura": 4.2,
     "vistas_hora": 0.0,
     "x_mediana": 0.07
    },
-   "visto": "2026-11-18T10:12:28+00:00",
+   "visto": "2026-11-18T18:51:55+00:00",
    "prev_views": 6,
    "estado": "nuevo",
    "archivo": null,
